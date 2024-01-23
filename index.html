@@ -16,22 +16,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/c629487606.js" crossorigin="anonymous"></script>
+
     <!-- Custom Styles -->
     <style>
         body{
             font-family: 'Manrope', sans-serif;
         }
+        .custom-container{
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     </style>
-
-
-
-
-    
 </head>
 
 <body data-theme="light">
-    <header>
+    <header class="custom-container">
+        <!-- nav -->
+        <div class="navbar bg-base-100 my-12">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white hover:font-bold">Home</a></li>
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">About</a></li>
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Pages</a></li>
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Blog</a></li>
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Contact</a></li>
+                  <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost hover:bg-white text-[#131318] text-2xl lg:text-4xl font-extrabold ">Hockey<span
+                  class="text-[#FF4240] -mx-[10px]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-[#424247] hover:text-primaryRed hover:bg-white">Home</a></li>
+                <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">About</a></li>
+                <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Pages</a></li>
+                <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Blog</a></li>
+                <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex gap-4 cursor-pointer ">
+              <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
+              <a class="btn bg-[#FF4240] hover:bg-[#ff5553] text-white font-bold px-4 lg:px-6 text-base lg:text-xl">Get Ticket</a>
+            </div>
+          </div>
 
     </header>
     <main>
